@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>saLOUt/KDEGettext.rb @ GitHub</title>
+	
+	<style type="text/css">
+		body {
+  		margin-top: 1.0em;
+  		background-color: #ec0d2d;
+		  font-family: "helvetica"; 
+  		color: #ffffff;
+    }
+    #container {
+      margin: 0 auto;
+      width: 700px;
+    }
+		h1 { font-size: 3.8em; color: #13f2d2; margin-bottom: 3px; }
+		h1 .small { font-size: 0.4em; }
+		h1 a { text-decoration: none }
+		h2 { font-size: 1.5em; color: #13f2d2; }
+    h3 { text-align: center; color: #13f2d2; }
+    a { color: #13f2d2; }
+    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    .download { float: right; }
+		pre { background: #000; color: #fff; padding: 15px;}
+    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    .footer { text-align:center; padding-top:30px; font-style: italic; }
+	</style>
+	
+</head>
+
+<body>
+  <a href="http://github.com/saLOUt/KDEGettext.rb"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+  
+  <div id="container">
+
+    <div class="download">
+      <a href="http://github.com/saLOUt/KDEGettext.rb/zipball/master">
+        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+      <a href="http://github.com/saLOUt/KDEGettext.rb/tarball/master">
+        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+    </div>
+      
+    <h1><a href="http://github.com/saLOUt/KDEGettext.rb">KDEGettext.rb</a> 
+      <span class="small">by <a href="http://github.com/saLOUt">saLOUt</a></span></h1>
+
+    <div class="description">
+      KDEGettext.rb is a parser that extends ruby gettext to work with the Qt/KDE framework provided by korundum.
+    </div>
+
+    <p>  Possible ways to start this script (kdegettext has to be in $: except in the first 3 ways):
+  * ./kdegettext.rb file.rb
+  * ruby    kdegettext.rb file.rb
+  * ruby1.9 kdegettext.rb file.rb
+  * ruby1.9 /usr/bin/rgettext -r kdegettext file.rb (only in login-console: > su - user)
+  * ruby    /usr/lib64/ruby/gems/1.8/gems/gettext-2.0.4/lib/gettext/tools/rgettext.rb -r kdegettext file.rb
+  * ruby1.9 /usr/lib64/ruby/gems/1.9.1/gems/gettext-2.0.4/lib/gettext/tools/rgettext.rb -r kdegettext file.rb
+
+  Acknowledgments:
+  * Masao Mutoh ( author of gettext package for ruby)
+    - write a parser from the author of gettext: http://www.yotabanana.com/hiki/ruby-gettext-howto-poparser.html
+  * Richard Dale ( some helpful links, author of korundum/qtruby package )
+  * the author of that piece of code found on http://www.koders.com/ruby/fidA7A93BC839C40D00497E6BB33479BAC9430FE50C.aspx?s="Chris+Wanstrath"#L20
+
+  Known Bugs:
+  * in ruby1.8 the hash (TargetList) is not sorted -> output in po is not sorted for line numbers
+  * rgettext -r kdegettext file.rb (with kdegettext.rb $:) only works if
+   - ruby version is 1.9
+   - the command comes from a new login-console, started via su - user
+
+  Changelog:
+  * 2009-08-02: v0.9 initial release</p><h2>Dependencies</h2>
+<p>The dependencies should be handled automatically when installing this gem.
+
+The following gems was used:
+locale, gettext, ruby_parser, sexp_processor</p>
+<h2>Install</h2>
+<p>for ruby 1.8: gem install kdegettext
+for ruby 1.9: gem1.9 install kdegettext (may vary - depend on your ruby 1.9 installation)</p>
+<h2>License</h2>
+<p>You may redistribute it and/or modify it under the same
+license terms as Ruby.</p>
+<h2>Authors</h2>
+<p>Robert Riemann (robert.riemann@physik.hu-berlin.de)<br/><br/>      </p>
+<h2>Contact</h2>
+<p> (robert.riemann@physik.hu-berlin.de)<br/>      </p>
+
+
+    <h2>Download</h2>
+    <p>
+      You can download this project in either
+      <a href="http://github.com/saLOUt/KDEGettext.rb/zipball/master">zip</a> or
+      <a href="http://github.com/saLOUt/KDEGettext.rb/tarball/master">tar</a> formats.
+    </p>
+    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
+      by running:
+      <pre>$ git clone git://github.com/saLOUt/KDEGettext.rb</pre>
+    </p>
+      
+    <div class="footer">
+      get the source code on GitHub : <a href="http://github.com/saLOUt/KDEGettext.rb">saLOUt/KDEGettext.rb</a>
+    </div>
+    
+  </div>
+
+  
+</body>
+</html>
