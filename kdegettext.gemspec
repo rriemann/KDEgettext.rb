@@ -24,7 +24,9 @@ Gem::Specification.new do |s|
      "README.markdown",
      "Rakefile",
      "VERSION",
-     "bin/kdegettext.rb"
+     "bin/kdegettext.rb",
+     "kdegettext.gemspec",
+     "pkg/kdegettext-0.9.3.gem"
   ]
   s.homepage = %q{http://github.com/saLOUt/KDEgettext.rb/}
   s.rdoc_options = ["--charset=UTF-8"]
