@@ -1,0 +1,27 @@
+  Acknowledgments:
+  * Masao Mutoh ( author of gettext package for ruby)
+    - write a parser from the author of gettext: http://www.yotabanana.com/hiki/ruby-gettext-howto-poparser.html
+  * Richard Dale ( some helpful links, author of korundum/qtruby package )
+  * the author of that piece of code found on http://www.koders.com/ruby/fidA7A93BC839C40D00497E6BB33479BAC9430FE50C.aspx?s="Chris+Wanstrath"#L20
+
+  Known Bugs:
+  * in ruby1.8 the hash (TargetList) is not sorted -> output in po is not sorted for line numbers
+  * rgettext -r kdegettext file.rb (with kdegettext.rb $:) only works if
+   - ruby version is 1.9
+   - the command comes from a new login-console, started via su - user
+
+  Install:
+  * maybe you need first: gem sources -a http://gems.github.com
+  * gem install kdegettext
+
+  Dependencies (should me installed automatically via gem):
+  * ruby 1.8: gem    install locale gettext ruby_parser sexp_processor
+  * ruby 1.9: gem1.9 install locale gettext ruby_parser sexp_processor
+
+  Possible ways to start this script (kdegettext has to be in $: except in the first 3 ways):
+  * ./kdegettext.rb file.rb
+  * ruby    kdegettext.rb file.rb
+  * ruby1.9 kdegettext.rb file.rb
+  * ruby1.9 /usr/bin/rgettext -r kdegettext file.rb (only in login-console: > su - user)
+  * ruby    /usr/lib64/ruby/gems/1.8/gems/gettext-2.0.4/lib/gettext/tools/rgettext.rb -r kdegettext file.rb
+  * ruby1.9 /usr/lib64/ruby/gems/1.9.1/gems/gettext-2.0.4/lib/gettext/tools/rgettext.rb -r kdegettext file.rb
