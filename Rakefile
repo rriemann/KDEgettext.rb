@@ -1,6 +1,4 @@
 require 'rake'
-
-gem 'git'
 require 'git'
 
 begin
@@ -20,9 +18,6 @@ begin
     s.has_rdoc = false
   end
 
-  Jeweler::RubyforgeTasks.new do |t|
-    t.doc_task = :yardoc
-  end
 rescue LoadError
   puts "Jeweler, or one of its dependencies, is not available. Install it with: sudo gem install jeweler"
 end
