@@ -9,24 +9,23 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Robert Riemann"]
-  s.date = %q{2009-08-06}
+  s.date = %q{2009-08-07}
   s.default_executable = %q{kdegettext.rb}
   s.description = %q{KDEgettext.rb is a parser that extends ruby gettext to work with the Qt/KDE framework provided by korundum. It allows creating catalog files (po-file) with the GNU GetText format.}
   s.email = %q{robert.riemann@physik.hu-berlin.de}
   s.executables = ["kdegettext.rb"]
   s.extra_rdoc_files = [
     "LICENSE",
-     "README.markdown"
+     "README.rdoc"
   ]
   s.files = [
-    "Changelog.markdown",
+    "Changelog.rdoc",
      "LICENSE",
-     "README.markdown",
+     "README.rdoc",
      "Rakefile",
      "VERSION",
      "bin/kdegettext.rb",
-     "kdegettext.gemspec",
-     "pkg/kdegettext-0.9.3.gem"
+     "kdegettext.gemspec"
   ]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/saLOUt/KDEgettext.rb/}

@@ -16,6 +16,7 @@ begin
     s.add_dependency('ruby_parser', '>= 2.0.3')
     s.add_dependency('sexp_processor', '>= 3.0.2')
     s.has_rdoc = true
+    s.files.exclude '.gitignore'
     s.rubyforge_project = "korundum"
   end
   
@@ -60,7 +61,7 @@ Rake::RDocTask.new do |rdoc|
   end
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "KDEgettext.rb #{version}"
-  rdoc.rdoc_files.include('README*')
+  rdoc.rdoc_files.include('README*','Changelog*','LICENSE','bin/*')
 end
 
 # kate: syntax ruby
