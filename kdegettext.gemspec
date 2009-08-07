@@ -14,15 +14,8 @@ Gem::Specification.new do |s|
   s.description = %q{KDEgettext.rb is a parser that extends ruby gettext to work with the Qt/KDE framework provided by korundum. It allows creating catalog files (po-file) with the GNU GetText format.}
   s.email = %q{robert.riemann@physik.hu-berlin.de}
   s.executables = ["kdegettext.rb"]
-  s.extra_rdoc_files = [
-    "LICENSE",
-     "README"
-  ]
   s.files = [
-    "Changelog",
-     "LICENSE",
-     "README",
-     "Rakefile",
+    "Rakefile",
      "VERSION",
      "bin/kdegettext.rb",
      "kdegettext.gemspec"
