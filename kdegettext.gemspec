@@ -16,13 +16,12 @@ Gem::Specification.new do |s|
   s.executables = ["kdegettext.rb"]
   s.extra_rdoc_files = [
     "LICENSE",
-     "README.markdown"
+     "README.rdoc"
   ]
   s.files = [
-    ".gitignore",
-     "Changelog.markdown",
+    "Changelog.rdoc",
      "LICENSE",
-     "README.markdown",
+     "README.rdoc",
      "Rakefile",
      "VERSION",
      "bin/kdegettext.rb",
