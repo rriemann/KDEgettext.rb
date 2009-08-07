@@ -16,7 +16,8 @@ begin
     s.add_dependency('ruby_parser', '>= 2.0.3')
     s.add_dependency('sexp_processor', '>= 3.0.2')
     s.has_rdoc = true
-    s.files.exclude ['.gitignore' 'VERSION']
+    s.files.exclude '.gitignore'
+    s.files.exclude 'VERSION'
     s.rubyforge_project = "korundum"
   end
   
