@@ -60,7 +60,8 @@ Rake::RDocTask.new do |rdoc|
   end
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "KDEgettext.rb #{version}"
-  rdoc.rdoc_files.include('README*')
+  rdoc.rdoc_files.include('README.markdown')
+  rdoc.rdoc_files.include('bin/*')
 end
 
 # kate: syntax ruby
